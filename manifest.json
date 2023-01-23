@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "railbase-azure-extension",
+  "content_scripts": [
+    {
+      "matches": ["https://dev.azure.com/railbase/RAILBASE/_sprints/backlog/Zugvoegel/RAILBASE/*"],
+      "js": ["backlog.js"]
+    },
+    {
+      "matches": ["https://dev.azure.com/railbase/RAILBASE/_git/*/pullrequest/*"],
+      "js": ["pullrequest.js"]
+    }
+  ]
+}
