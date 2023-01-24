@@ -50,6 +50,7 @@ const initializePlugin = () => {
     clipboardFrame.src = 'https://www.clipboardjesus.com/';
     clipboardFrame.style.height = '100%';
     clipboardFrame.style.border = '0';
+    clipboardFrame.allow = 'clipboard-read; clipboard-write';
     const page = document.querySelector('.full-size.region-page .flex-row.flex-grow>.flex-column.flex-grow');
     page.innerHTML = '';
     page.appendChild(clipboardFrame);
