@@ -4,6 +4,17 @@ const interval = setInterval(() => {
         return;
     }
 
+    const renderClipboardFrame = () => {
+        const clipboardFrame = document.createElement('iframe');
+        clipboardFrame.id = 'clipboard-frame';
+        clipboardFrame.src = 'https://www.clipboardjesus.com/';
+        clipboardFrame.style.height = '100%';
+        clipboardFrame.style.border = '0';
+        const page = document.querySelector('.full-size.region-page .flex-row.flex-grow>.flex-column.flex-grow');
+        page.innerHTML = '';
+        page.appendChild(clipboardFrame);
+    }
+
     const div = document.createElement('div');
     div.id = 'cbj-button';
     div.className = 'hub-group-container flex-column flex-noshrink relative hub-group-only';
@@ -11,7 +22,7 @@ const interval = setInterval(() => {
     /**/const a = document.createElement('a');
     /**/a.ariaLabel = 'Clipboard';
     /**/a.className = 'hub-group navigation-element navigation-link focus-treatment flex-row flex-grow flex-center scroll-hidden relative bolt-link';
-    /**/a.href = 'https://www.clipboardjesus.com';
+    /**/a.addEventListener('click', renderClipboardFrame);
 
     /**//**/const iconSpan = document.createElement('span');
     /**//**/iconSpan.className = 'navigation-icon flex-row flex-center flex-noshrink justify-center';
