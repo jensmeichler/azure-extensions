@@ -4,6 +4,10 @@
   "name": "railbase-azure-extension",
   "content_scripts": [
     {
+      "matches": ["https://dev.azure.com/*"],
+      "js": ["devops.js"]
+    },
+    {
       "matches": ["https://dev.azure.com/railbase/RAILBASE/_sprints/backlog/Zugvoegel/RAILBASE/*"],
       "css": ["backlog.css"]
     },
