@@ -13,8 +13,8 @@ setInterval(() => {
     newButton.id = 'be-happy';
     newButton.className = 'bolt-button enabled primary bolt-focus-treatment';
     newButton.innerHTML = 'Be happy 😁';
-    newButton.animate([
-            { transform: 'scale(0)', opacity: 0 }, { transform: 'scale(1)' }],
+    newButton.animate(
+        [{ transform: 'scale(0)', opacity: 0 }, { transform: 'scale(1)' }],
         { duration: 300, easing: 'ease-in-out' }
     );
     newButton.onclick = () => {

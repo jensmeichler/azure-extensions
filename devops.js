@@ -18,6 +18,10 @@ const interval = setInterval(() => {
     const div = document.createElement('div');
     div.id = 'cbj-button';
     div.className = 'hub-group-container flex-column flex-noshrink relative hub-group-only';
+    div.animate(
+        [{ opacity: 0 }, { opacity: 1 }],
+        { duration: 300, easing: 'ease-in-out' }
+    );
 
     /**/const a = document.createElement('a');
     /**/a.ariaLabel = 'Clipboard';
