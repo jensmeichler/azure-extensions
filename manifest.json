@@ -5,15 +5,15 @@
   "content_scripts": [
     {
       "matches": ["https://dev.azure.com/*"],
-      "js": ["devops.js"]
+      "js": ["js/devops.js"]
     },
     {
       "matches": ["https://dev.azure.com/railbase/RAILBASE/_sprints/backlog/Zugvoegel/RAILBASE/*"],
-      "css": ["backlog.css"]
+      "css": ["css/backlog.css"]
     },
     {
       "matches": ["https://dev.azure.com/railbase/RAILBASE/_git/*/pullrequest/*"],
-      "js": ["pullrequest.js"]
+      "js": ["js/pullrequest.js"]
     }
   ]
 }
