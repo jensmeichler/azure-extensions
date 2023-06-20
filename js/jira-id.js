@@ -5,7 +5,8 @@ setInterval(() =>
         document.getElementsByClassName('grid-cell')
     ).forEach(container => {
         if (container.textContent.includes(textToRemove)) {
-            container.textContent = container.textContent.replace(textToRemove, '');
+            const text = container.textContent.replace(textToRemove, '');
+            container.innerHTML = `<a target="_blank" href="${textToRemove}${text}">${text}</a>`;
         }
     }),
     3000
