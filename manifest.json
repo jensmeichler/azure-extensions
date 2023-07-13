@@ -5,7 +5,7 @@
   "content_scripts": [
     {
       "matches": ["https://dev.azure.com/*"],
-      "js": ["js/devops.js", "js/jira-id.js"]
+      "js": ["js/devops-clipboard.js", "js/jira-id.js"]
     },
     {
       "matches": ["https://dev.azure.com/railbase/RAILBASE/_sprints/backlog/Zugvoegel/RAILBASE/*"],
